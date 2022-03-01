@@ -1,5 +1,6 @@
 from webbrowser import get
 from flask import Flask
+from bestand1 import *
 
 app = Flask(__name__)
 
@@ -18,3 +19,8 @@ def hello_world3(getal):
     var1 = int(getal)
     var2 = var1 + var1
     return f'Dit is een hele andere {str(var2)} functie</p>'
+
+@app.route("/vierde")
+def hello_world4():
+    return heleanderemethode()
+
