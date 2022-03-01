@@ -24,3 +24,6 @@ def hello_world3(getal):
 def hello_world4():
     return heleanderemethode()
 
+@app.route("/vijfde")
+def hello_world5():
+    return "twee keer" + heleanderemethode() + heleanderemethode()
